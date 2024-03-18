@@ -71,4 +71,4 @@ function filterPozitive(arr) {
    }
    return result;
 };
-console.log(filterPozitive);
+console.log(filterPozitive)
