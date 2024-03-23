@@ -5,7 +5,8 @@ console.log(numbs[i]);
 }
 
 const numbs1 = [1, 5, 4, 10, 0, 3];
-console.log(numbs1[4]);
+const index = numbs1.indexOf(4);
+console.log(index);
 
 const numbs2 = [1, 3, 5, 10, 20];
 let joinNumbs2 = numbs2.join(' ');
@@ -72,3 +73,24 @@ function filterPozitive(arr) {
    return result;
 };
 console.log(filterPozitive)
+
+
+
+const numbs9 = [];
+for(let i = 0; i < 10; i++) {
+   numbs9.push(Math.floor(Math.random() * 10) + 1);
+}
+const numbs10 = [];
+numbs9.forEach((num) => {
+if (num % 2 === 0) {
+  numbs10.push(num); 
+} 
+})
+console.log(numbs10);
+
+const numbs11 = [];
+for(let i = 0; i < 6; i++) {
+   numbs11.push(Math.floor(Math.random() * 10) + 1);
+}
+const sum = numbs11.reduce((total, number) => total + number, 0);
+console.log(sum / numbs11.length);
